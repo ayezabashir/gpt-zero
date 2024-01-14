@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +6,6 @@
 @layer base {
   html {
     @apply m-0 p-0;
+    font-family: "Ubuntu", sans-serif;
   }
 }
