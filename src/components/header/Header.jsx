@@ -1,18 +1,18 @@
 const Header = () => {
     return (
         <>
-            <div className="header p-2">
+            <div className="p-6">
                 <div className="img">
                     <img src="/logo.svg" alt="" />
-                    GPTZero
+                    <h1 className="text-txt-black font-bold">GPTZero</h1>
                 </div>
                 <div className="header-links">
                     <ul>
-                        <li>solutions</li>
-                        <li>resources</li>
-                        <li>pricing</li>
-                        <li>team</li>
-                        <li>login</li>
+                        <li className="text-txt-black">solutions</li>
+                        <li className="text-txt-black">resources</li>
+                        <li className="text-txt-black">pricing</li>
+                        <li className="text-txt-black">team</li>
+                        <li className="text-txt-black">login</li>
                     </ul>
                 </div>
                 <div className="buttons">

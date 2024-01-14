@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
+    "./src/App.jsx",
     "./src/components/header/Header.jsx",
     "./src/components/footer/Footer.jsx",
   ],
@@ -10,8 +10,7 @@ export default {
       regular: 400,
       medium: 500,
       bold: 700,
-    }
-    ,
+    },
     spacing: {
       0: '0px',
       1: '4px',
