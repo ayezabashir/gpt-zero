@@ -1,23 +1,21 @@
 const Header = () => {
     return (
         <>
-            <div className="p-6">
-                <div className="img">
+            <div className="flex justify-between align-middle p-6">
+                <div className="flex align-middle justify-center img">
                     <img src="/logo.svg" alt="" />
-                    <h1 className="text-txt-black font-bold">GPTZero</h1>
+                    <h1 className="text-txt-black text-2xl ml-2 font-bold">GPTZero</h1>
                 </div>
-                <div className="header-links">
-                    <ul>
-                        <li className="text-txt-black">solutions</li>
-                        <li className="text-txt-black">resources</li>
-                        <li className="text-txt-black">pricing</li>
-                        <li className="text-txt-black">team</li>
-                        <li className="text-txt-black">login</li>
-                    </ul>
-                </div>
-                <div className="buttons">
-                    <button>Sales</button>
-                    <button>get started</button>
+                <ul className="flex align-middle justify-center space-x-5">
+                    <li className="text-txt-black uppercase text-sm font-medium ">solutions</li>
+                    <li className="text-txt-black uppercase text-sm font-medium ">resources</li>
+                    <li className="text-txt-black uppercase text-sm font-medium ">pricing</li>
+                    <li className="text-txt-black uppercase text-sm font-medium ">team</li>
+                </ul>
+                <div className="buttons flex align-middle justify-center space-x-5">
+                    <button className="text-txt-black uppercase text-sm font-medium ">login</button>
+                    <button className="border border-txt-black uppercase font-light text-sm">Sales</button>
+                    <button className="bg-btn-black hover:bg-btn-hover-black text-white uppercase font-light">get started</button>
                 </div>
             </div>
         </>

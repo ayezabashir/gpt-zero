@@ -10,4 +10,7 @@
   body {
     font-family: "Ubuntu", sans-serif;
   }
+  ul {
+    text-decoration: none;
+  }
 }
