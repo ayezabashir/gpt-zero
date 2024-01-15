@@ -19,18 +19,10 @@
   .header {
     .nav-bar {
       .nav-bar-items {
-        .gpt-zero {
-          cursor: pointer;
-          &:hover {
-            transition: 0.4s ease-in-out;
-            transform: scale(1.1);
-          }
-        }
         .navbar-items-item {
-          cursor: pointer;
           .item {
+            letter-spacing: 1px;
             &:hover {
-              transition: all 0.3s ease-in-out;
               background: rgba(0, 0, 0, 0.1);
             }
           }
