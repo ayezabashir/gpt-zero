@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import Solutions from "./Solutions";
 
 const Header = () => {
     const [dropdown, setDropdown] = useState(true);
@@ -43,6 +44,9 @@ const Header = () => {
                     <button className="px-4 py-3 rounded-md bg-btn-black hover:bg-btn-hover-black text-white uppercase font-light">get started</button>
                 </div>
             </div>
+            {
+                dropdown ? '' : <Solutions />
+            }
         </div>
     )
 }
