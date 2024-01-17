@@ -2,6 +2,7 @@ export default {
   content: [
     "./src/App.jsx",
     "./src/components/header/Header.jsx",
+    "./src/components/header/Solutions.jsx",
     "./src/components/footer/Footer.jsx",
   ],
   theme: {
@@ -17,6 +18,8 @@ export default {
         'btn-black': '#313641',
         'btn-hover-black': '#1F2937',
         'txt-gray': '#999999',
+        'blue': '#50A0FF',
+        'gray': '#6B7280',
       }
     },
   },
