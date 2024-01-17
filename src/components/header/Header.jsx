@@ -2,16 +2,20 @@ import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import Solutions from "./Solutions";
+import Resources from "./Resources";
 
 const Header = () => {
     const [dropdown, setDropdown] = useState(true);
     const [dropdown2, setDropdown2] = useState(true);
     const handleDropdown = () => {
         setDropdown(!dropdown);
+        setDropdown2(true);
     }
     const handleDropdown2 = () => {
         setDropdown2(!dropdown2);
+        setDropdown(true);
     }
+
     return (
         <div className="header">
             <div className="nav-bar flex justify-between items-center py-3 px-8">
@@ -46,6 +50,9 @@ const Header = () => {
             </div>
             {
                 dropdown ? '' : <Solutions />
+            }
+            {
+                dropdown2 ? '' : <Resources />
             }
         </div>
     )
