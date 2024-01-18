@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import Solutions from "./Solutions";
-import Resources from "./Resources";
+import NavItems from "./NavItems";
+import { solutions, products, resources, support } from './../../assets/data/data'
 
 const Header = () => {
     const [dropdown, setDropdown] = useState(true);
@@ -49,10 +49,10 @@ const Header = () => {
                 </div>
             </div>
             {
-                dropdown ? '' : <Solutions />
+                dropdown ? '' : <NavItems navItemOne='Solutions' itemsOne={solutions} navItemTwo='Products' itemsTwo={products} />
             }
             {
-                dropdown2 ? '' : <Resources />
+                dropdown2 ? '' : <NavItems navItemOne='Resources' itemsOne={resources} navItemTwo='support' itemsTwo={support} />
             }
         </div>
     )
