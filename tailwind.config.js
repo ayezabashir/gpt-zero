@@ -13,6 +13,10 @@ export default {
       medium: 500,
       bold: 700,
     },
+    container: {
+      center: true,
+      padding: '2rem',
+    },
     extend: {
       colors: {
         'txt-black': '#3B3A3B',
