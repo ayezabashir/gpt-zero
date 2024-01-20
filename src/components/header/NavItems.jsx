@@ -2,8 +2,8 @@
 const NavItems = ({ navItemOne, navItemTwo, itemsOne, itemsTwo }) => {
     return (
         <>
-            <div className="grid grid-cols-2 max-w-[1200px]">
-                <div className="mx-[75px] my-4">
+            <div className="grid lg:grid-cols-2 max-w-[1200px]">
+                <div className="lg:ml-[75px] my-4 px-3 py-4 lg:px-0 lg:py-0">
                     <h1 className="text-blue font-medium uppercase">{navItemOne}</h1>
                     {
                         itemsOne.map((item) => {

@@ -2,7 +2,8 @@ export default {
   content: [
     "./src/App.jsx",
     "./src/components/header/Header.jsx",
-    "./src/components/header/Solutions.jsx",
+    "./src/components/header/NavItems.jsx",
+    "./src/components/header/MenuItems.jsx",
     "./src/components/footer/Footer.jsx",
   ],
   theme: {

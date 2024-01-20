@@ -3,10 +3,12 @@ import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import NavItems from "./NavItems";
 import { solutions, products, resources, support } from './../../assets/data/data'
+import MenuItems from "./MenuItems";
 
 const Header = () => {
     const [dropdown, setDropdown] = useState(true);
     const [dropdown2, setDropdown2] = useState(true);
+    const [menu, setMenu] = useState(true);
     const handleDropdown = () => {
         setDropdown(!dropdown);
         setDropdown2(true);
@@ -14,6 +16,10 @@ const Header = () => {
     const handleDropdown2 = () => {
         setDropdown2(!dropdown2);
         setDropdown(true);
+    }
+
+    const showMenu = () => {
+        setMenu(!menu);
     }
 
     return (
@@ -24,7 +30,7 @@ const Header = () => {
                         <img src="/logo.svg" alt="" />
                         <h1 className="text-txt-black text-2xl ml-2 font-bold">GPTZero</h1>
                     </div>
-                    <ul className="navbar-items-item flex items-center justify-center space-x-1">
+                    <ul className="hidden lg:flex navbar-items-item items-center justify-center space-x-1">
                         <li onClick={handleDropdown} className="item hover:scale-110 transition delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer  flex items-center px-4 py-3 rounded-md text-txt-black uppercase text-sm font-medium ">
                             solutions
                             {
@@ -43,16 +49,26 @@ const Header = () => {
                 </div>
 
                 <div className="buttons flex items-center justify-center space-x-5">
-                    <button className="px-4 py-3 text-txt-black uppercase text-sm font-medium hover:scale-110 transition delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer">log in</button>
-                    <button className="px-4 py-3 rounded-md border border-txt-black hover:bg-btn-hover-black hover:transition-all hover:text-white uppercase font-light text-sm">Sales</button>
+                    <button className="hidden md:block px-4 py-3 text-txt-black uppercase text-sm font-medium hover:scale-110 transition delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer">log in</button>
+                    <button className="hidden lg:block px-4 py-3 rounded-md border border-txt-black hover:bg-btn-hover-black hover:transition-all hover:text-white uppercase font-light text-sm">Sales</button>
                     <button className="px-4 py-3 rounded-md bg-btn-black hover:bg-btn-hover-black text-white uppercase font-light">get started</button>
+                    <div className="lg:hidden cursor-pointer" onClick={showMenu}>
+                        <div className={`bg-txt-black w-6 h-1 ${menu ? '' : 'rotate-45 -mb-1 transition duration-500 '}`}></div>
+                        <div className={`bg-txt-black w-6 mt-1 mb-1 h-1 ${menu ? 'block' : 'hidden'}`}></div>
+                        <div className={`bg-txt-black w-6 mb-1 h-1 ${menu ? '' : '-rotate-45 transition duration-500 '}`}></div>
+                    </div>
                 </div>
             </div>
+            <div className="hidden lg:block">
+                {
+                    dropdown ? '' : <NavItems navItemOne='Solutions' itemsOne={solutions} navItemTwo='Products' itemsTwo={products} />
+                }
+                {
+                    dropdown2 ? '' : <NavItems navItemOne='Resources' itemsOne={resources} navItemTwo='support' itemsTwo={support} />
+                }
+            </div>
             {
-                dropdown ? '' : <NavItems navItemOne='Solutions' itemsOne={solutions} navItemTwo='Products' itemsTwo={products} />
-            }
-            {
-                dropdown2 ? '' : <NavItems navItemOne='Resources' itemsOne={resources} navItemTwo='support' itemsTwo={support} />
+                menu ? '' : <MenuItems />
             }
         </div>
     )
