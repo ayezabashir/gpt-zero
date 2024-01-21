@@ -28,7 +28,7 @@ const Header = () => {
                 <div className="nav-bar-items flex items-center justify-center img">
                     <div className="hover:scale-110 transition delay-150 hover:translate-y-1 duration-300 ease-in-out cursor-pointer flex items-center justify-between mr-8">
                         <img src="/logo.svg" alt="" />
-                        <h1 className="text-txt-black text-2xl ml-2 font-bold">GPTZero</h1>
+                        <h1 className="text-txt-black text-xl md:text-2xl ml-2 font-bold">GPTZero</h1>
                     </div>
                     <ul className="hidden lg:flex navbar-items-item items-center justify-center space-x-1">
                         <li onClick={handleDropdown} className="item hover:scale-110 transition delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer  flex items-center px-4 py-3 rounded-md text-txt-black uppercase text-sm font-medium ">
@@ -48,10 +48,10 @@ const Header = () => {
                     </ul>
                 </div>
 
-                <div className="buttons flex items-center justify-center space-x-5">
+                <div className="buttons flex items-center justify-center space-x-2 md:space-x-5">
                     <button className="hidden md:block px-4 py-3 text-txt-black uppercase text-sm font-medium hover:scale-110 transition delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer">log in</button>
-                    <button className="hidden lg:block px-4 py-3 rounded-md border border-txt-black hover:bg-btn-hover-black hover:transition-all hover:text-white uppercase font-light text-sm">Sales</button>
-                    <button className="px-4 py-3 rounded-md bg-btn-black hover:bg-btn-hover-black text-white uppercase font-light">get started</button>
+                    <button className="hidden lg:block text-xs md:text-sm px-4 py-3 rounded-md border border-txt-black hover:bg-btn-hover-black hover:transition-all hover:text-white uppercase font-light">Sales</button>
+                    <button className="px-4 py-3 text-xs md:text-sm rounded-md bg-btn-black md:order-2 md:border-btn-black hover:bg-btn-hover-black hover:border-btn-hover-black text-white uppercase font-light">get started</button>
                     <div className="lg:hidden cursor-pointer" onClick={showMenu}>
                         <div className={`bg-txt-black w-6 h-1 ${menu ? '' : 'rotate-45 -mb-1 transition duration-500 '}`}></div>
                         <div className={`bg-txt-black w-6 mt-1 mb-1 h-1 ${menu ? 'block' : 'hidden'}`}></div>
