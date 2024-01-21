@@ -23,7 +23,7 @@ const Header = () => {
     }
 
     return (
-        <div className="header">
+        <div className="header bg-transparent z-10 relative">
             <div className="nav-bar flex justify-between items-center py-3 px-8">
                 <div className="nav-bar-items flex items-center justify-center img">
                     <div className="hover:scale-110 transition delay-150 hover:translate-y-1 duration-300 ease-in-out cursor-pointer flex items-center justify-between mr-8">

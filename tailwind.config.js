@@ -4,6 +4,7 @@ export default {
     "./src/components/header/Header.jsx",
     "./src/components/header/NavItems.jsx",
     "./src/components/header/MenuItems.jsx",
+    "./src/components/hero/Hero.jsx",
     "./src/components/footer/Footer.jsx",
   ],
   theme: {
