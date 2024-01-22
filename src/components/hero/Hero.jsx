@@ -6,8 +6,8 @@ const Hero = () => {
         setText(event.target.value);
     }
     return (
-        <section className="container z-50 opacity-100 relative mt-4 flex items-center justify-evenly">
-            <div className="w-1/2">
+        <section className="container z-50 opacity-100 relative mt-4 md:flex items-center justify-evenly">
+            <div className="lg:w-1/2">
                 <h2 className="text-4xl mb-4 font-bold text-txt-black">
                     More than an AI detector <br />
                     Preserve what&apos;s <span className="underline">human</span>.
@@ -16,37 +16,38 @@ const Hero = () => {
                 <a className="text-txt-black font-bold hover:underline underline-offset-1 flex items-center gap-2" href="#">Check out our products <FaLongArrowAltRight className="text-xl" /> </a>
             </div>
             {/* right */}
-            <div className="w-1/2">
-                <div className="rounded-3xl border-8 border-slate-200 bg-slate-200">
+            <div className="lg:w-1/2">
+                <div className="rounded-3xl border-8 border-slate-200 bg-slate-200 ">
                     <div className="rounded-3xl border-8 border-slate-100 bg-slate-100">
                         <div className="box bg-white p-8 rounded-2xl">
                             <h3 className="text-txt-black mb-2">
                                 Was this text written by a <span className="font-medium">human</span> or <span className="font-medium">AI</span>?
                             </h3>
                             <small className="text-txt-gray">Try detecting one of our sample texts:</small>
-                            <ul className="text-sm mt-2 text-slate-600 flex gap-2 items-center">
-                                <li className="border border-txt-gray px-2 py-1 rounded-2xl">ChatGPT</li>
-                                <li className="border border-txt-gray px-2 py-1 rounded-2xl">GPT4</li>
-                                <li className="border border-txt-gray px-2 py-1 rounded-2xl">Llama2</li>
-                                <li className="border border-txt-gray px-2 py-1 rounded-2xl">Human</li>
-                                <li className="border border-txt-gray px-2 py-1 rounded-2xl">AI + Human</li>
+                            <ul className="text-sm mt-2 text-slate-600 flex flex-wrap gap-2 items-center">
+                                <li className="border border-txt-gray hover:bg-btn-hover-black hover:text-white cursor-pointer px-2 py-1 rounded-2xl">ChatGPT</li>
+                                <li className="border border-txt-gray hover:bg-btn-hover-black hover:text-white cursor-pointer px-2 py-1 rounded-2xl">GPT4</li>
+                                <li className="border border-txt-gray hover:bg-btn-hover-black hover:text-white cursor-pointer px-2 py-1 rounded-2xl">Llama2</li>
+                                <li className="border border-txt-gray hover:bg-btn-hover-black hover:text-white cursor-pointer px-2 py-1 rounded-2xl">Human</li>
+                                <li className="border border-txt-gray hover:bg-btn-hover-black hover:text-white cursor-pointer px-2 py-1 rounded-2xl">AI + Human</li>
                             </ul>
                             <div className="textarea border border-txt-gray mt-3 rounded-md p-2">
-                                <textarea value={text} onInput={totalChars} className="border-0 outline-none font-regular text-sm resize-none" placeholder="Paste your text here..." cols="30" rows="10"></textarea>
+                                <textarea value={text} onInput={totalChars} className="border-0 outline-none w-full font-regular text-sm resize-none" placeholder="Paste your text here..." cols="30" rows="9"></textarea>
                                 <div>
                                     <span className="text-txt-gray text-sm mr-2">{text.length}/5000 characters</span>
                                     <button className="border border-txt-gray px-3 py-1 rounded-3xl text-blue text-xs uppercase">Upgrade</button>
                                 </div>
                             </div>
-                            <div className="mt-3 mb-1 flex items-center justify-between w-full">
-                                <button className="bg-black hover:bg-slate-700 text-white p-3 rounded-md w-[200px]">Check Origin</button>
+                            <div className="mt-3 mb-1 md:flex items-center text-center md:justify-between w-full">
+                                <button className="bg-black md:mb-0 mb-2 text-sm hover:bg-slate-700 text-white p-3 rounded-md w-[200px]">Check Origin</button>
                                 <input type="file" id="actual-btn" hidden />
-                                <label className="flex items-center gap-1 px-3 py-1 text-sm text-txt-black cursor-pointer border border-dashed border-gray rounded-md" htmlFor="actual-btn">Upload File <img src="/info.svg" className="w-5" alt="info icon" /> </label>
+                                <label className="flex items-center m-auto md:m-0 justify-center gap-1 px-3 py-1 text-sm text-txt-black cursor-pointer border border-dashed w-[130px] border-gray rounded-md" htmlFor="actual-btn">Upload File <img src="/info.svg" className="w-5" alt="info icon" /> </label>
                             </div>
-                            <small>By continuing you agree to our <strong className="hover:underline">Terms of service</strong></small>
+                            <small className="text-txt-black">By continuing you agree to our <strong className="hover:underline">Terms of service</strong></small>
                         </div>
                     </div>
                 </div>
+                <img src="/shadow.svg" className="mt-5" alt="" />
             </div >
         </section>
     )
