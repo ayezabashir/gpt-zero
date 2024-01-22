@@ -87,3 +87,24 @@ export const support = [
         text: 'Answers to all your GPTZero questions.',
     },
 ]
+
+export const cardData = [
+    {
+        id: 1,
+        title: 'Deep analysis',
+        icon: './files.svg',
+        text: 'Access a deeper scan with unprecedented levels of AI text analysis.'
+    },
+    {
+        id: 2,
+        title: 'Source scanning',
+        icon: './search.svg',
+        text: 'Scan documents for plagiarism and our AI copyright check.'
+    },
+    {
+        id: 3,
+        title: 'Histories',
+        icon: './laptop.svg',
+        text: 'Easily scan dozens of files at once, organize, save, and download reports.'
+    }
+]

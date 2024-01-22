@@ -5,6 +5,8 @@ export default {
     "./src/components/header/NavItems.jsx",
     "./src/components/header/MenuItems.jsx",
     "./src/components/hero/Hero.jsx",
+    "./src/components/discover/Discover.jsx",
+    "./src/components/discover/Card.jsx",
     "./src/components/footer/Footer.jsx",
   ],
   theme: {
