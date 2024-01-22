@@ -1,5 +1,10 @@
+import { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 const Hero = () => {
+    const [text, setText] = useState('');
+    const totalChars = (event) => {
+        setText(event.target.value);
+    }
     return (
         <section className="container z-50 opacity-100 relative mt-4 flex items-center justify-evenly">
             <div className="w-1/2">
@@ -27,14 +32,18 @@ const Hero = () => {
                                 <li className="border border-txt-gray px-2 py-1 rounded-2xl">AI + Human</li>
                             </ul>
                             <div className="textarea border border-txt-gray mt-3 rounded-md p-2">
-                                <textarea className="border-0 outline-none font-regular text-sm resize-none" placeholder="Paste your text here..." name="" id="" cols="30" rows="10"></textarea>
-                                <button className="border border-txt-gray px-3 py-1 rounded-3xl text-blue text-xs uppercase">Upgrade</button>
+                                <textarea value={text} onInput={totalChars} className="border-0 outline-none font-regular text-sm resize-none" placeholder="Paste your text here..." cols="30" rows="10"></textarea>
+                                <div>
+                                    <span className="text-txt-gray text-sm mr-2">{text.length}/5000 characters</span>
+                                    <button className="border border-txt-gray px-3 py-1 rounded-3xl text-blue text-xs uppercase">Upgrade</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Check Origin</button>
-                                <input type="file" name="" id="" />
+                            <div className="mt-3 mb-1 flex items-center justify-between w-full">
+                                <button className="bg-black hover:bg-slate-700 text-white p-3 rounded-md w-[200px]">Check Origin</button>
+                                <input type="file" id="actual-btn" hidden />
+                                <label className="flex items-center gap-1 px-3 py-1 text-sm text-txt-black cursor-pointer border border-dashed border-gray rounded-md" htmlFor="actual-btn">Upload File <img src="/info.svg" className="w-5" alt="info icon" /> </label>
                             </div>
-                            <small>By continuing you agree to our <strong>Terms of service</strong></small>
+                            <small>By continuing you agree to our <strong className="hover:underline">Terms of service</strong></small>
                         </div>
                     </div>
                 </div>
