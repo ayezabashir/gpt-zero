@@ -2,7 +2,7 @@ import Card from "./Card"
 
 const Discover = () => {
     return (
-        <div className="md:w-[85%] mx-auto shadow-sm rounded-sm bg-white z-50 opacity-100 relative my-10 pb-10 flex flex-col ">
+        <div className="md:w-[85%] mx-auto shadow-md rounded-sm bg-white z-50 opacity-100 relative my-10 pb-10 flex flex-col ">
             <div className="md:w-[60%]">
                 <div className="m-9 mt-11 mr-2">
                     <h2 className="text-blue font-bold text-base">WITH MILLIONS OF USERS</h2>

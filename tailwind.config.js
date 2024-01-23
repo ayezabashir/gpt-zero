@@ -7,6 +7,7 @@ export default {
     "./src/components/hero/Hero.jsx",
     "./src/components/discover/Card.jsx",
     "./src/components/discover/Discover.jsx",
+    "./src/components/newsexclusve/NewsExclusive.jsx",
     "./src/components/footer/Footer.jsx",
   ],
   theme: {
