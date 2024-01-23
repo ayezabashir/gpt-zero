@@ -3,7 +3,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div className="footer container">
+        <div className="relative bottom-0 container">
             <ul className="text-txt-black flex justify-evenly items-center flex-wrap">
                 <li>© 2023-2024 GPTZero |</li>
                 <li className="underline">Contact Us |</li>
