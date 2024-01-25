@@ -8,6 +8,7 @@ export default {
     "./src/components/discover/Card.jsx",
     "./src/components/discover/Discover.jsx",
     "./src/components/newsexclusve/NewsExclusive.jsx",
+    "./src/components/leadingResearch/Leading.jsx",
     "./src/components/footer/Footer.jsx",
   ],
   theme: {
