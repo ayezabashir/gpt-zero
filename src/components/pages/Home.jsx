@@ -1,3 +1,4 @@
+import Prices from "../Price/Prices"
 import Discover from "../discover/Discover"
 import Hero from "../hero/Hero"
 import Leading from "../leadingResearch/Leading"
@@ -10,6 +11,7 @@ const Home = () => {
             <Discover />
             <NewsExclusive />
             <Leading />
+            <Prices />
         </>
     )
 }
