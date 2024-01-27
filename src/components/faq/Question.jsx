@@ -8,7 +8,7 @@ const Question = () => {
                     return (
                         <>
                             <details className="border-b-2 border-slate-200" key={item.id}>
-                                <summary className="text-txt-black text-lg cursor-pointer font-medium mb-7 mt-2">{item.q}</summary>
+                                <summary className="text-txt-black text-lg cursor-pointer font-medium mb-7 mt-2 list-none">{item.q}</summary>
                                 <div className="mb-4 font-light text-txt-black">{item.a}</div>
                             </details>
                         </>
