@@ -6,10 +6,12 @@ const Question = () => {
             {
                 faqData.map(item => {
                     return (
-                        <details key={item.id}>
-                            <summary>{item.q}</summary>
-                            <div>{item.a}</div>
-                        </details>
+                        <>
+                            <details className="border-b-2 border-slate-200" key={item.id}>
+                                <summary className="text-txt-black text-lg cursor-pointer font-medium mb-7 mt-2">{item.q}</summary>
+                                <div className="mb-4 font-light text-txt-black">{item.a}</div>
+                            </details>
+                        </>
                     )
                 }
                 )

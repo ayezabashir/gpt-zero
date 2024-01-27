@@ -12,6 +12,8 @@ export default {
     "src/components/Price/Prices.jsx",
     "src/components/Price/Card.jsx",
     "src/components/orgazanization/Organization.jsx",
+    "src/components/faq/Faqs.jsx",
+    "src/components/faq/Question.jsx",
     "src/components/footer/Footer.jsx",
   ],
   theme: {
