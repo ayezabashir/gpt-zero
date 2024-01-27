@@ -3,6 +3,7 @@ import Discover from "../discover/Discover"
 import Hero from "../hero/Hero"
 import Leading from "../leadingResearch/Leading"
 import NewsExclusive from "../newsexclusve/NewsExclusive"
+import Organization from "../orgazanization/Organization"
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <NewsExclusive />
             <Leading />
             <Prices />
+            <Organization />
         </>
     )
 }
