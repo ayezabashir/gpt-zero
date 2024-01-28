@@ -15,20 +15,3 @@
     text-decoration: none;
   }
 }
-
-@layer components {
-  .header {
-    .nav-bar {
-      .nav-bar-items {
-        .navbar-items-item {
-          .item {
-            letter-spacing: 1px;
-            &:hover {
-              background: rgba(0, 0, 0, 0.1);
-            }
-          }
-        }
-      }
-    }
-  }
-}

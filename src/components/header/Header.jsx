@@ -31,7 +31,7 @@ const Header = () => {
                         <h1 className="text-txt-black text-xl md:text-2xl ml-2 font-bold">GPTZero</h1>
                     </div>
                     <ul className="hidden lg:flex navbar-items-item items-center justify-center space-x-1">
-                        <li onClick={handleDropdown} className="item hover:scale-110 transition delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer  flex items-center px-4 py-3 rounded-md text-txt-black uppercase text-sm font-medium ">
+                        <li onClick={handleDropdown} className="item tracking-widest hover:scale-110 transition hover:bg-[#0000001a] delay-150 hover:translate-y-0.25 duration-300 ease-in-out cursor-pointer  flex items-center px-4 py-3 rounded-md text-txt-black uppercase text-sm font-medium ">
                             solutions
                             {
                                 dropdown ? <IoIosArrowUp className="ml-1" /> : <IoIosArrowDown className="ml-1" />
