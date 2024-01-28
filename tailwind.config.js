@@ -14,6 +14,7 @@ export default {
     "src/components/orgazanization/Organization.jsx",
     "src/components/faq/Faqs.jsx",
     "src/components/faq/Question.jsx",
+    "src/components/plans/Plans.jsx",
     "src/components/footer/Footer.jsx",
   ],
   theme: {

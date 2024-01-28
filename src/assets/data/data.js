@@ -166,3 +166,43 @@ export const faqData = [
         a: "No. We do not store or collect the documents passed into any calls to our API. We wanted to be overly cautious on the side of storing data from any organizations using our API.",
     }
 ]
+
+export const plansData = [
+    {
+        id: 1,
+        plan: 'basic',
+        price: 'free',
+        text: "With this plan, you can access the GPTZero dashboard and the Origin chrome extension. Scan up to 10,000 words per month and 7 scans an hour.",
+        p: [
+            "10,000 words per month",
+            "Premium AI detection models",
+            "Batch file scanning 10 files",
+            "Access to Origin Chrome Extension",
+        ]
+    },
+    {
+        id: 2,
+        plan: 'essential',
+        price: '$10',
+        text: "Our basic plan, with access to all essential AI detection features on the dashboard. Does not include plagiarism scanning.",
+        p: [
+            "150,000 words per month",
+            "Premium AI detection models",
+            "Batch file scanning 10 files",
+            "Access to Origin Chrome Extension"
+        ]
+    },
+    {
+        id: 3,
+        plan: 'premium',
+        price: '$16',
+        text: "Our most popular plan, recommended for individuals who want full access to all our features, including plagiarism scans.",
+        p: [
+            "300,000 words per month",
+            "Everything in Essential",
+            "Premium view",
+            "Plagiarism Scanning",
+            "Writing Feedback"
+        ]
+    },
+]
