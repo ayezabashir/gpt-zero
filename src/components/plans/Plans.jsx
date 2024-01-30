@@ -15,7 +15,7 @@ const Plans = () => {
                     <button className={`text-txt-black font-medium ${isYearly ? 'border-b-4 border-[#E5E7EB]' : 'border-b-0'}`} onClick={togglePlanType}>Yearly <span className="text-blue">(Save 33%)</span> </button>
                     <button className={`text-gray font-medium ${isYearly ? 'border-b-0' : 'border-b-4 border-[#E5E7EB]'}`} onClick={togglePlanType}>Monthly</button>
                 </div>
-                <div className="container p-20 md:p-0 lg:p-20 md:flex justify-between items-center">
+                <div className="container p-20 pt-0 md:p-0 lg:p-20 lg:pt-0 md:flex justify-between items-center">
                     {plansData.map(item => {
                         return (
                             <div key={item.id} className="container h-[600px] p-10 m-5 rounded-md shadow-lg bg-white hover:shadow-xl flex flex-col justify-between cursor-pointer hover:scale-105 ease-out delay-150 duration-300">
