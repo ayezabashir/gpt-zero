@@ -201,8 +201,7 @@ export const plansData = [
             "300,000 words per month",
             "Everything in Essential",
             "Premium view",
-            "Plagiarism Scanning",
-            "Writing Feedback"
+            "Plagiarism Scanning"
         ]
     },
 ]
