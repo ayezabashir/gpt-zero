@@ -11,6 +11,11 @@
     font-family: "Ubuntu", sans-serif;
     background: #fff9f3;
   }
+  input::placeholder {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
   ul {
     text-decoration: none;
   }
