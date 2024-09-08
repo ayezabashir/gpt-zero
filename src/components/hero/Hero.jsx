@@ -8,11 +8,11 @@ const Hero = () => {
   return (
     <section className="container z-50 opacity-100 relative my-5 lg:my-0 lg:min-h-[88vh] lg:flex items-center justify-evenly">
       <div className="lg:w-1/2">
-        <h2 className="text-4xl mb-4 font-bold text-txt-black">
+        <h2 className="md:text-4xl text-2xl mb-4 font-bold text-txt-black">
           More than an AI detector <br />
           Preserve what&apos;s <span className="underline">human</span>.
         </h2>
-        <p className="text-txt-black w-[80%] text-base mb-3 font-light">
+        <p className="text-txt-black w-[80%] md:text-base text-sm mb-3 font-light">
           We bring transparency to humans navigating a world filled with AI
           content. GPTZero is the gold standard in AI detection, trained to
           detect ChatGPT, GPT4, Bard, LLaMa, and other AI models.
@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="lg:w-1/2 mt-5 lg:mt-0">
         <div className="rounded-3xl border-8 border-slate-200 bg-slate-200 ">
           <div className="rounded-3xl border-8 border-slate-100 bg-slate-100">
-            <div className="box bg-white p-8 rounded-2xl">
+            <div className="box bg-white md:p-8 p-4 rounded-2xl">
               <h3 className="text-txt-black mb-2">
                 Was this text written by a{" "}
                 <span className="font-medium">human</span> or{" "}
@@ -37,7 +37,7 @@ const Hero = () => {
               <small className="text-txt-gray">
                 Try detecting one of our sample texts:
               </small>
-              <ul className="text-sm mt-2 text-slate-600 flex flex-wrap gap-2 items-center">
+              <ul className="md:text-sm text-xs mt-2 text-slate-600 flex flex-wrap gap-2 items-center">
                 <li className="border border-txt-gray hover:bg-btn-hover-black hover:text-white cursor-pointer px-2 py-1 rounded-2xl">
                   ChatGPT
                 </li>
@@ -64,7 +64,7 @@ const Hero = () => {
                   rows="9"
                 ></textarea>
                 <div>
-                  <span className="text-txt-gray text-sm mr-2">
+                  <span className="text-txt-gray md:text-sm text-xs mr-2">
                     {text.length}/5000 characters
                   </span>
                   <button className="border border-txt-gray px-3 py-1 rounded-3xl text-blue text-xs uppercase">
