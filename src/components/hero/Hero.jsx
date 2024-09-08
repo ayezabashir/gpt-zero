@@ -12,7 +12,7 @@ const Hero = () => {
           More than an AI detector <br />
           Preserve what&apos;s <span className="underline">human</span>.
         </h2>
-        <p className="text-txt-black w-[80%] md:text-base text-sm mb-3 font-light">
+        <p className="text-txt-black w-full lg:w-[80%] md:text-base text-sm mb-3 font-light">
           We bring transparency to humans navigating a world filled with AI
           content. GPTZero is the gold standard in AI detection, trained to
           detect ChatGPT, GPT4, Bard, LLaMa, and other AI models.

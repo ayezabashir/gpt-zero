@@ -2,7 +2,9 @@ const NewsExclusive = () => {
   return (
     <div className="md:w-[85%] mx-auto shadow-md rounded-sm bg-white z-50 opacity-100 relative my-10 pb-10 md:flex items-center justify-between ">
       <div className="md:w-[65%] md:m-9 ml-6 mt-11 mr-2">
-        <h2 className="text-blue font-bold text-base">NEW AND EXCLUSIVE</h2>
+        <h2 className="text-blue font-bold text-base  pt-5">
+          NEW AND EXCLUSIVE
+        </h2>
         <h3 className="text-txt-black mt-3 mb-5 md:text-3xl text-2xl font-bold">
           Deep Analysis View
         </h3>

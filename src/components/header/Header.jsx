@@ -76,7 +76,7 @@ const Header = () => {
           <button className="hidden lg:block text-xs md:text-sm px-4 py-3 rounded-md border border-txt-black hover:bg-btn-hover-black hover:transition-all hover:text-white uppercase font-light">
             Sales
           </button>
-          <button className="px-4 py-3 text-xs md:text-sm rounded-md bg-btn-black md:order-2 md:border-btn-black hover:bg-btn-hover-black hover:border-btn-hover-black text-white uppercase font-light">
+          <button className="sm:px-4 px-2 py-3 text-xs md:text-sm rounded-md bg-btn-black md:order-2 md:border-btn-black hover:bg-btn-hover-black hover:border-btn-hover-black text-white uppercase font-light">
             get started
           </button>
           <div className="lg:hidden cursor-pointer" onClick={showMenu}>
